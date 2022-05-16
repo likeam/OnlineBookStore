@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
 
@@ -44,7 +45,24 @@
         <a href="#reviews" class="fas fa-comments"></a>
         <a href="#blogs" class="fas fa-blog"></a>
     </nav>
-    
+
+    <div class="login-form-container">
+        <div id="close-login-btn" class="fas fa-times"></div>
+        <form action="">
+            <h3>singn in</h3>
+            <span>username</span>
+            <input type="email" placeholder="enter your email" class="box">
+            <span>password</span>
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="checkbox">
+                <input type="checkbox" id="remember me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't hav an account? <a href="#">create one</a></p>
+        </form>
+    </div>
 
     <script src="./app.js"></script>
 </body>
