@@ -13,3 +13,12 @@ document.querySelector('#search-btn').onclick = () =>{
     document.querySelector('#close-login-btn').onclick = () =>{
         loginForm.classList.remove('.active');
     }
+
+
+
+    let swiper = new Swiper(".books-slide", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
