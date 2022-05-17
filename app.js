@@ -6,25 +6,26 @@ document.querySelector('#search-btn').onclick = () =>{
 }
 
 //LOGIN FORM
-    let loginForm = document.querySelector('.login-form-container');
+    const loginForm = document.querySelector('.login-form-container');
     document.querySelector('#login-btn').onclick = () =>{
-        loginForm.classList.toggle('ative');
+        loginForm.classList.toggle('active');
     }
     document.querySelector('#close-login-btn').onclick = () =>{
-        loginForm.classList.remove('.active');
+        loginForm.classList.remove('active');
     }
 
+    window.onscroll = () =>{
 
+        searchForm.classList.remove('active');
+    
+        if(window.scrollY > 80){
+            document.querySelector('.header .header-2').classList.add('active');
+        }else{
+            document.querySelector('.header .header-2').classList.remove('active');
+        }
+    
+    }
 
-    let swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        freeMode: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
     window.onload = () =>{
 
         if(window.scrollY > 80){
@@ -44,3 +45,15 @@ document.querySelector('#search-btn').onclick = () =>{
         function fadeOut(){
         setTimeout(loader, 4000);
     }
+
+
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+
