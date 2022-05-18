@@ -1,0 +1,63 @@
+.footer .share{
+    padding:1rem 0;
+    text-align: center;
+
+    & a{
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        color:#fff;
+        background:var(--green);
+        margin:0 .3rem;
+        border-radius: 50%; 
+    }
+    & a:hover{
+        background:var(--black);
+    }
+}
+
+
+.footer .credit{
+    border-top: var(--border);
+    margin-top: 2rem;
+    padding:0 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:var(--light-color);
+    text-align: center;
+
+    & span{
+        color:var(--green);
+    }
+}
+
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+
+    & .box h3{
+        font-size: 2.2rem;
+        color:var(--black);
+        padding:1rem 0;
+
+        & a{
+            display: block;
+            font-size: 1.4rem;
+            color:var(--light-color);
+            padding:1rem 0;
+        }
+        & a i{
+            color:var(--green);
+            padding-right: .5rem;
+        }
+        & a:hover i{
+            padding-right: 2rem;
+        }
+        & .map{
+            width:100%;
+        }
+    }
+}

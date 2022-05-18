@@ -1,0 +1,84 @@
+
+.home{
+    background: url(/img/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+& .row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+
+& .content{
+    flex:1 1 42rem;
+}
+
+& .books-slider{
+    flex:1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+& .books-slider a img{
+    height: 25rem;
+}
+
+& .books-slider a:hover img{
+    transform: scale(.9);
+}
+
+& .books-slider .stand{
+    width:100%;
+    margin-top: -2rem;
+}
+
+& .content h3{
+    color:var(--black);
+    font-size: 4.5rem;
+}
+
+& .content p{
+    color:var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding:1rem 0;
+}
+}
+}
+
+/* ICONS CONTAINER SECTION */
+
+.icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:1.5rem;
+
+& .icons{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    padding:2rem 0;
+}
+
+& .icons i{
+    font-size: 3.5rem;
+    color:var(--green);
+}
+}
+
+
+@media (max-width:768px){
+
+
+
+    .home .row .content{
+        text-align: center;
+    }
+
+    .home .row .content h3{
+        font-size: 3.5rem;
+    }
+    
+
+}

@@ -1,0 +1,25 @@
+{
+  "name": "onlinebookstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/likeam/OnlineBookStore.git"
+  },
+  "author": "Abdul Rehman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/likeam/OnlineBookStore/issues"
+  },
+  "homepage": "https://github.com/likeam/OnlineBookStore#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
